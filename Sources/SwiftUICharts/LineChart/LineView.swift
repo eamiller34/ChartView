@@ -49,7 +49,7 @@ public struct LineView: View {
                     if (self.title != nil){
                         Text(self.title!)
                             .font(Font.custom("Roboto-Medium", size: 18))
-                            .bold().foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
+                            .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
                     }
                     if (self.legend != nil){
                         Text(self.legend!)
