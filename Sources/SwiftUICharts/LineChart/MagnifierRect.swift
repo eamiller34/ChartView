@@ -15,17 +15,17 @@ public struct MagnifierRect: View {
         ZStack{
             Text("\(self.currentNumber, specifier: valueSpecifier)")
                 .font(.system(size: 18, weight: .bold))
-                .offset(x: 0, y:-110)
+                .offset(x: 0, y: 0)
                 .foregroundColor(self.colorScheme == .dark ? Color.white : Color.black)
             if (self.colorScheme == .dark ){
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color.white, lineWidth: self.colorScheme == .dark ? 2 : 0)
-                    .frame(width: 60, height: 220)
+                    .frame(width: 60, height: 50)
             }else{
                 RoundedRectangle(cornerRadius: 16)
-                    .frame(width: 60, height: 220)
+                    .frame(width: 60, height: 50)
                     .foregroundColor(Color.white)
-                    .shadow(color: Colors.LegendText, radius: 12, x: 0, y: 6 )
+                    .shadow(color: Colors.LegendText, radius: 5, x: 0, y: 2 )
                     .blendMode(.multiply)
             }
         }

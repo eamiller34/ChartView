@@ -87,7 +87,7 @@ public struct LineView: View {
                     .offset(x: 0, y: 40 )
                     MagnifierRect(currentNumber: self.$currentDataNumber, valueSpecifier: self.valueSpecifier)
                         .opacity(self.opacity)
-                        .offset(x: self.dragLocation.x - geometry.frame(in: .local).size.width/2, y: 36)
+                        .offset(x: self.dragLocation.x - geometry.frame(in: .local).size.width/2, y: -25)
                 }
                 .frame(width: geometry.frame(in: .local).size.width, height: 160)
                 .gesture(DragGesture()
