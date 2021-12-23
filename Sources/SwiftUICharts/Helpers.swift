@@ -15,8 +15,8 @@ public struct Colors {
     public static let color2Accent:Color = Color(hexString: "#4266E8")
     public static let color3:Color = Color(hexString: "#FCECEA")
     public static let color3Accent:Color = Color(hexString: "#E1614C")
-    public static let OrangeEnd:Color = Color(hexString: "#FF782C")
-    public static let OrangeStart:Color = Color(hexString: "#EC2301")
+    public static let OrangeEnd:Color = Color.pink
+    public static let OrangeStart:Color = Color.pink
     public static let LegendText:Color = Color(hexString: "#A7A6A8")
     public static let LegendColor:Color = Color(hexString: "#E8E7EA")
     public static let LegendDarkColor:Color = Color(hexString: "#545454")
